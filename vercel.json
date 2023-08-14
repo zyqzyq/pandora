@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "pandora/src/pandora/cloud_launcher.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "api/index.py"
+    }
+  ]
+}
